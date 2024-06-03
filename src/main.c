@@ -6,7 +6,7 @@
 /*   By: darkwater <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 21:52:06 by darkwater         #+#    #+#             */
-/*   Updated: 2024/06/02 19:18:06 by darkwater        ###   ########.fr       */
+/*   Updated: 2024/06/03 20:54:23 by darkwater        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,12 @@ int	main(void)
 	char	*result;
 	char	choice;
 
-	input = "udot nyt kzlvpe zbv gsln waggnvs stx kww vifg kiuituxin \
+	/*input = "udot nyt kzlvpe zbv gsln waggnvs stx kww vifg kiuituxin \
 lsy fvul lui qwnces lnye izk fzdf yuzs kugvizohx bmyn st vuhv \
-ig yumt my";
+ig yumt my";*/
+
+	input="dazfi sfspa vqlsn pxysz wxalc dafgq uismt phzga mkttf tccfx kfcrg glpfe tzmmm zozde adwvz wmwkv gqsoh qsvhp wfkls lease pwhmj egkpu rvsxj xvbwv posde teqtx obzik wcxlw nuovj mjcll oeofa zenvm jilow zekaz ejaqd ilsww esgug ktzgq zvrmn wtqse otktk pbsta mqver mjegl jqrtl gfjyg sptzp gtacm oecbx sesci ygufp kvill twdks zodfw fweaa pqtfs tqirg mpmel ryelh qsvwb awmos delhm uzgpg yekzu kwtam zjmls evjqt glawv ovvxh kwqil ieuys zwxah huszo gmuzq cimvz uvwif jjhpw vxfse tzedf";
+
 	prn_intro();
 	getchar();
 	system("clear");

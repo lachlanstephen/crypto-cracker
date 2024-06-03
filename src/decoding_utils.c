@@ -6,7 +6,7 @@
 /*   By: darkwater <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/02 14:12:58 by darkwater         #+#    #+#             */
-/*   Updated: 2024/06/02 14:14:33 by darkwater        ###   ########.fr       */
+/*   Updated: 2024/06/03 20:38:48 by darkwater        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,19 +52,22 @@ int	ft_getmax(int *coinc, int len)
 	return (max);
 }
 
-int	*ft_getkeylen(int *coinc, int len, int max)
+int	ft_getkeylen(int *coinc, int len, int max)
 {
-	static int	key_len[10];
-	int			i;
-	int			iter;
-	int			lim;
-	int			step;
+	int	key_len;
+	int	i;
+	int	iter;
+	int	lim;
+	int	step;
 
 	i = -1;
 	iter = 0;
 	lim = 39;
+	if (len / 8 > lim)
+		lim = len / 8;
 	step = -1;
-	while (++iter < len && step < 9)
+	key_len = 0;
+	while (++iter < len && step < 9 && key_len == 0)
 	{
 		i = 0;
 		while ((++i * iter) < lim)
@@ -73,7 +76,7 @@ int	*ft_getkeylen(int *coinc, int len, int max)
 				break ;
 		}
 		if (i * iter > lim && iter * 2 <= lim)
-			key_len[++step] = iter;
+			key_len = iter;
 	}
 	return (key_len);
 }
