@@ -6,7 +6,7 @@
 /*   By: darkwater <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 21:52:06 by darkwater         #+#    #+#             */
-/*   Updated: 2024/06/03 20:54:23 by darkwater        ###   ########.fr       */
+/*   Updated: 2024/06/03 21:59:20 by darkwater        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,12 @@
 static void	prn_intro(void)
 {
 	system("clear");
-	printf("\n\t - - - CRYPTO CRACKER v0.2 - - - \n\nWelcome to my \
-first attempt at an encoding and decoding program, built in C. Presently \
-I am only handling the information gathering side of the Vigenere Cipher, \
-but am looking to expand that to other ciphers!\n\nPlease feel free to \
+	printf("\n\t - - - CRYPTO CRACKER v0.2.2 - - - \n\nWelcome to my \
+first attempt at an encoding and decoding program, built in C. Currently \
+the program can encrypt using Vigenere and Rot, and decrypt using Rot. \
+It will be able to help you decrypt Vigenere, by providing summaries \
+needed to work out the key. If you have the key, it can decrypt Vigenere. \
+I am looking to expand that to other ciphers!\n\nPlease feel free to \
 leave comments on how I can improve this :)\n");
 	printf("\n\n\tPress enter to continue!\n\n> ");
 }
