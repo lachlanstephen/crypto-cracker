@@ -6,7 +6,7 @@
 /*   By: darkwater <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 21:52:06 by darkwater         #+#    #+#             */
-/*   Updated: 2024/06/03 21:59:20 by darkwater        ###   ########.fr       */
+/*   Updated: 2024/06/05 21:27:29 by darkwater        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,10 @@ int	main(void)
 lsy fvul lui qwnces lnye izk fzdf yuzs kugvizohx bmyn st vuhv \
 ig yumt my";*/
 
-	input="dazfi sfspa vqlsn pxysz wxalc dafgq uismt phzga mkttf tccfx kfcrg glpfe tzmmm zozde adwvz wmwkv gqsoh qsvhp wfkls lease pwhmj egkpu rvsxj xvbwv posde teqtx obzik wcxlw nuovj mjcll oeofa zenvm jilow zekaz ejaqd ilsww esgug ktzgq zvrmn wtqse otktk pbsta mqver mjegl jqrtl gfjyg sptzp gtacm oecbx sesci ygufp kvill twdks zodfw fweaa pqtfs tqirg mpmel ryelh qsvwb awmos delhm uzgpg yekzu kwtam zjmls evjqt glawv ovvxh kwqil ieuys zwxah huszo gmuzq cimvz uvwif jjhpw vxfse tzedf";
+	input = "uhgs rbg bzes mb xhf meiet tah bfznr tp unvk bm gle cbehs tbgxioz glesx qsrpmuc wfgg xo hxg lin tah sbp fyci wrpidbbys gkhmt itakioz svon mui bstaghfl glau lui gbmuirfw fsmf hs mt gbahioz vx jvlg ahbm fle xtaxee mb lemi byt ixe frftxjatm";
+	//input="dazfi sfspa vqlsn pxysz wxalc dafgq uismt phzga mkttf tccfx kfcrg glpfe tzmmm zozde adwvz wmwkv gqsoh qsvhp wfkls lease pwhmj egkpu rvsxj xvbwv posde teqtx obzik wcxlw nuovj mjcll oeofa zenvm jilow zekaz ejaqd ilsww esgug ktzgq zvrmn wtqse otktk pbsta mqver mjegl jqrtl gfjyg sptzp gtacm oecbx sesci ygufp kvill twdks zodfw fweaa pqtfs tqirg mpmel ryelh qsvwb awmos delhm uzgpg yekzu kwtam zjmls evjqt glawv ovvxh kwqil ieuys zwxah huszo gmuzq cimvz uvwif jjhpw vxfse tzedf";
 
+	//input = "The password is PleaseChangeMe";
 	prn_intro();
 	getchar();
 	system("clear");

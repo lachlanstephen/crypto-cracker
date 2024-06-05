@@ -6,7 +6,7 @@
 /*   By: darkwater <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/02 16:38:41 by darkwater         #+#    #+#             */
-/*   Updated: 2024/06/02 19:13:32 by darkwater        ###   ########.fr       */
+/*   Updated: 2024/06/05 21:07:15 by darkwater        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,15 +26,21 @@ char	*rot_encrypt(char *plain)
 	while (true)
 	{
 		printf("How many rotations to apply? ");
-		rot = getchar();
-		if (rot < '0' || rot > '9')
-			continue;
+		rot = 23 + '0';
+//		rot = getchar();
+//		if (rot < '0' || rot > '9')
+//			continue;
 		break ;
 	}
 	while (res[++i] != 0)
 	{
 		if (res[i] != ' ')
-			res[i] = (res[i] - 'a' + (rot - '0')) % 26 + 'a';
+		{
+			if (res[i] >= 'A' && res[i] <= 'Z')
+				res[i] = (res[i] - 'A' + (rot - '0')) % 26 + 'A';
+			else if (res[i] >= 'a' && res[i] <= 'z')
+				res[i] = (res[i] - 'a' + (rot - '0')) % 26 + 'a';
+		}
 	}
 	return (res);
 }
@@ -56,7 +62,12 @@ char	*rot_cracker(char *cipher)
 		while (res[++j] != 0)
 		{
 			if (res[j] != ' ')
-				res[j] = (res[j] - 'a' + 1) % 26 + 'a';
+			{
+				if (res[j] >= 'A' && res[j] <= 'Z')
+					res[j] = (res[j] - 'A' + 1) % 26 + 'A';
+				else if (res[j] >= 'a' && res[j] <= 'z')
+					res[j] = (res[j] - 'a' + 1) % 26 + 'a';
+			}
 		}
 		printf("\nRotate: %d, String: %s\n", i + 1, res);
 	}
